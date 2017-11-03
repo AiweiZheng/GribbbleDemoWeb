@@ -6,9 +6,178 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
+  <script src="assets/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/lib/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/lib/jQuery-easing.js"></script>
+  <script type="text/javascript" src="assets/lib/landing.js"></script>
+
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/animate.css">
+  <link rel="stylesheet" href="assets/stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/style.css"> 
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap-theme-custom.css"> 
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#intro">Dribbble</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#what">Intro</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#screenshots">Screenshots</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#feature">features</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <section class="intro">
+        <div class="intro-body">
+          <div id = "header" class="inner" style="margin-bottom:35px">
+            <header>
+              <h1 id="title">Dribbble</h1>
+            </header>
+            <span id="subTitle" class="byline">
+              Professional Application for Dribbble
+            </span>
+          </div>
+          <a href="#what" class="button round scrolly">Start</a>
+        </div>
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+  </section>
+
+  <section id="what" class="container content-section">
+    <h2 class="text-center">Howdy! You're looking at <strong>Dribbble.</strong></h2>
+    <div class="text-center">
+        <span class="byline">GigHub is a  musical network that gives you easy access to live band performance.</span>
+        <span class="byline">Follow your favorite artists, attend any gig with a simple click.</span>
+        <span class="byline">Create your own favorite artists' list, manage your upcoming gigs.</span>
+        <span class="byline">It supports all kinds of devices, from phones to tablets to desktops.</span>
+    </div>
+    <br />
+  </section>
+  <section id="screenshots" class="content-section" style="background: black">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner carousel container" role="listbox">
+          <div class="item active" >
+            <img src="./assets/images/screenshots/accounts.png">
+            <div class="carousel-caption">
+                <h3>Image1</h3>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./assets/images/background.jpg">
+            <div class="carousel-caption">
+                <h3>Image2</h3>
+            </div>
+          </div>
+          <div class="item" >
+            <img src="./assets/images/background.jpg">
+            <div class="carousel-caption">
+                <h3>Image3</h3>
+            </div>
+          </div>
+          <div class="item" >
+            <img src="./assets/images/background.jpg">
+            <div class="carousel-caption">
+                <h3>Image4</h3>
+            </div>
+          </div>
+          <div class="item" >
+            <img src="./assets/images/background.jpg">
+            <div class="carousel-caption">
+                <h3>Image5</h3>
+            </div>
+          </div>
+          <div class="item" >
+            <img src="./assets/images/background.jpg">
+            <div class="carousel-caption">
+                <h3>Image6</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <span class="forward " href="#carousel-example-generic" role="button" data-slide="next">
+        </span>
+        <span class="backward" href="#carousel-example-generic" role="button" data-slide="prev">
+        </span>
+    </div>
+  </section>
+
+  <section id="feature" class="content-section text-center">
+    <div class="container">
+        <h2>Features</h2>
+
+        <span class="byline" >
+          <i class="fa fa-check-square-o"></i>
+          Follow / Unfollow artists, attend / skip a gig.
+        </span>
+        <span class="byline" >
+          <i class="fa fa-check-square-o"></i>
+          Follow / Unfollow artists, attend / skip a gig.
+        </span>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h3>Feedback or Suggestions</h3>
+    <span class="byline" >Please Contact me if you have any feedback or suggestions, source code is also available on Github.</p>
+    <ul class="list-inline icons">
+        <li>
+            <a href="mailto:aiweizheng@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+        </li>
+        <li>
+            <a href="https://github.com/AiweiZheng/Dribbble" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        </li>
+    </ul>
+    <p class="copyright">Gighub &copy; Aiwei Zheng 2017, All Rights Reserved</p>
+    
+  </footer>
 </body>
 </html>
