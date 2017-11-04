@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>DribbbleDemo</title>
+  <title>GribbbleDemo</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/stylesheets/style.css"> 
   <link rel="stylesheet" href="assets/stylesheets/bootstrap-theme-custom.css"> 
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 
 </head>
 <body>
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#intro">Dribbble</a>
+            <a class="navbar-brand">Gribbble</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
@@ -41,7 +41,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#what">Intro</a>
+                    <a href="#intro">Intro</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#screenshots">Screenshots</a>
@@ -57,14 +57,15 @@
     </div>
   </nav>
 
-  <section class="intro">
+  <section id="intro" class="intro">
         <div class="intro-body">
           <div id = "header" class="inner" style="margin-bottom:35px">
             <header>
-              <h1 id="title">Dribbble</h1>
+              <h1 id="title">Gribbble</h1>
             </header>
             <span id="subTitle" class="byline">
-              Professional Application for Dribbble
+               A beautiful Material Design Dribbble app for Android by 
+               <a id = "name" href="">Aiwei Zheng</a>
             </span>
           </div>
           <a href="#what" class="button round scrolly">Start</a>
@@ -80,87 +81,135 @@
   </section>
 
   <section id="what" class="container content-section">
-    <h2 class="text-center">Howdy! You're looking at <strong>Dribbble.</strong></h2>
+    <h2 class="text-center">Howdy! You're looking at <strong>Gribbble.</strong></h2>
     <div class="text-center">
-        <span class="byline">GigHub is a  musical network that gives you easy access to live band performance.</span>
-        <span class="byline">Follow your favorite artists, attend any gig with a simple click.</span>
-        <span class="byline">Create your own favorite artists' list, manage your upcoming gigs.</span>
-        <span class="byline">It supports all kinds of devices, from phones to tablets to desktops.</span>
+        <span class="byline">Gribbble is a client App lets you browse all categories of Dribbble, popular ,everyone and debuts.</span>
+        <span class="byline">What is Dribbble? Dribbble is a community of designers answering that question each day.</span>
+        <span class="byline"> Web designers, graphic designers, illustrators, icon artists, typographers, logo designers.</span>
     </div>
     <br />
+    <div class="text-center">
+        <a href="./assets/gribbble.apk" target="_blank">
+            <img src="./assets/images/gribbble_launcher.png" alt="Download Gribbble APK"/>
+        </a>
+    </div>
+    <div class="text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.zheng.project.android.dribbble" target="_blank">
+            <img src="./assets/images/google_play_badge.png"/>
+        </a>
+    </div>
   </section>
-  <section id="screenshots" class="content-section" style="background: black">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner carousel container" role="listbox">
-          <div class="item active" >
-            <img src="./assets/images/screenshots/accounts.png">
-            <div class="carousel-caption">
-                <h3>Image1</h3>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="./assets/images/background.jpg">
-            <div class="carousel-caption">
-                <h3>Image2</h3>
-            </div>
-          </div>
-          <div class="item" >
-            <img src="./assets/images/background.jpg">
-            <div class="carousel-caption">
-                <h3>Image3</h3>
-            </div>
-          </div>
-          <div class="item" >
-            <img src="./assets/images/background.jpg">
-            <div class="carousel-caption">
-                <h3>Image4</h3>
-            </div>
-          </div>
-          <div class="item" >
-            <img src="./assets/images/background.jpg">
-            <div class="carousel-caption">
-                <h3>Image5</h3>
-            </div>
-          </div>
-          <div class="item" >
-            <img src="./assets/images/background.jpg">
-            <div class="carousel-caption">
-                <h3>Image6</h3>
-            </div>
-          </div>
+  <section id="screenshots"  style="background: black">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2"  style="padding:0">
+                <div id="carousel-example-generic" class="carousel slide" data-interval= "3000" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        </ol>
+                
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner carousel container" role="listbox">
+                          <div class="item active" >
+                            <img src="./assets/images/screenshots/drawer.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image1</h3>
+                            </div>
+                          </div>
+                
+                          <div class="item">
+                            <img src="./assets/images/screenshots/oauth.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image2</h3>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="./assets/images/screenshots/shot_details.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image3</h3>
+                            </div>
+                          </div>
+                          <div class="item" >
+                            <img src="./assets/images/screenshots/shot_list.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image4</h3>
+                            </div>
+                          </div>
+                          <div class="item" >
+                            <img src="./assets/images/screenshots/themes.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image5</h3>
+                            </div>
+                          </div>
+                          <div class="item" >
+                            <img src="./assets/images/screenshots/bucket_shots.png" class="img-thumbnail"/>
+                            <div class="carousel-caption">
+                                <h3>Image6</h3>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <!-- Controls -->
+                        <span class="forward " href="#carousel-example-generic" role="button" data-slide="next">
+                        </span>
+                        <span class="backward" href="#carousel-example-generic" role="button" data-slide="prev">
+                        </span>
+                    </div>
         </div>
-
-        <!-- Controls -->
-        <span class="forward " href="#carousel-example-generic" role="button" data-slide="next">
-        </span>
-        <span class="backward" href="#carousel-example-generic" role="button" data-slide="prev">
-        </span>
     </div>
   </section>
 
   <section id="feature" class="content-section text-center">
     <div class="container">
         <h2>Features</h2>
-
         <span class="byline" >
-          <i class="fa fa-check-square-o"></i>
-          Follow / Unfollow artists, attend / skip a gig.
+            <i class="fa fa-check-square-o"></i>
+            OAuth login.
         </span>
         <span class="byline" >
-          <i class="fa fa-check-square-o"></i>
-          Follow / Unfollow artists, attend / skip a gig.
+            <i class="fa fa-check-square-o"></i>
+            Browse, Comment, your likes and shots you are following.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Browse players' profiles as well as their shots.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            View animated GIFs.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Follow Players on Dribbble.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Create / Edit / Delete bucket on Dribbble.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Add shots your like to buckets.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Share shots you want other people to see.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Animation effect to make viewing experience more fun.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            Six different themes.
+        </span>
+        <span class="byline" >
+            <i class="fa fa-check-square-o"></i>
+            More features are comming soon.
         </span>
     </div>
   </section>
@@ -176,7 +225,7 @@
             <a href="https://github.com/AiweiZheng/Dribbble" target="_blank"><i class="fa fa-github fa-2x"></i></a>
         </li>
     </ul>
-    <p class="copyright">Gighub &copy; Aiwei Zheng 2017, All Rights Reserved</p>
+    <p class="copyright">Gighub &copy; Aiwei Zheng 2017, All Rights Reserved.</p>
     
   </footer>
 </body>

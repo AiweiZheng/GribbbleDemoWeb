@@ -30,12 +30,12 @@ p {
 }
 
 a {
-    color: #26a5d3;
+    color: #fff;
 }
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #00bfff;
+    color: rgba(234,76,137, 0.75);
 }
 
 
@@ -74,23 +74,6 @@ a:hover, a:focus {
 .nav > li > a:focus {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.5);
-}
-
-.actions {
-    margin-top: 20px;
-    margin-left: 30px;
-    padding-left: 20px;
-    font-weight: 400;
-}
-
-.actions a {
-    margin-right: 20px;
-    color: #ffc266;
-}
-
-.actions a:hover {
-    margin-right: 20px;
-    color: #ff9900;
 }
 
 .carousel-caption h3 {
@@ -234,11 +217,15 @@ a:hover, a:focus {
 .byline {
     color: #5b5b5b;
     display: block;
-    font-size: 22px;
+    font-size: 1.3em;
     margin-top: 0.5em;
     line-height: 1.5em;
     font-weight: 300;
     font-family: Source Sans Pro;
+}
+
+#subTitle {
+    font-size: 1.6em;
 }
 
 header
@@ -309,7 +296,7 @@ ul.icons li a {
 }
 
 ul.icons li a:hover {
-    color: #ef8376;
+    color: rgb(234, 76, 84);
 }
 
 .fa:before {
@@ -323,10 +310,14 @@ ul.icons li a:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .control-label {
     font-weight: 300;
 }
+
+#name {
+    font-style: italic;
+}
+
 /*Carousel */
 .carousel {
     position: relative;
@@ -351,6 +342,9 @@ ul.icons li a:hover {
     left: 0;
 }
 
+.img-thumbnail {
+    background-color:rgba(234,76,137, 0.5);
+}
 .carousel .forward:before,
 .carousel .backward:before {
     content: '';
@@ -358,7 +352,7 @@ ul.icons li a:hover {
     width: 6em;
     height: 6em;
     border-radius: 100%;
-    background-color: rgba(72,57,73, 0.5);
+    background-color: rgba(72,57,73, 0.1);
     position: absolute;
     top: 50%;
     margin-top: -3em;
@@ -404,7 +398,7 @@ ul.icons li a:hover {
 
 .carousel .forward:hover:before,
 .carousel .backward:hover:before {
-    background-color: rgba(239,131,118, 0.75);
+    background-color: rgba(234,76,137, 0.75);
 }
 
 .page-scroll {
@@ -423,7 +417,6 @@ ul.icons li a:hover {
 }
 
 /* Buttons */
-		
 .button
 {
     position: relative;
